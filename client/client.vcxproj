@@ -60,8 +60,12 @@
   <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\myVsLibrary\josn\include;D:\myVsLibrary\protobuf\include;D:\myVsLibrary\linux\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="AesCrypto.cpp" />
+    <ClCompile Include="ClientOP.cpp" />
     <ClCompile Include="codec.cpp" />
     <ClCompile Include="codecFactory.cpp" />
     <ClCompile Include="Cryptographic.cpp" />
@@ -77,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AesCrypto.h" />
+    <ClInclude Include="ClientOP.h" />
     <ClInclude Include="codec.h" />
     <ClInclude Include="codecFactory.h" />
     <ClInclude Include="Cryptographic.h" />

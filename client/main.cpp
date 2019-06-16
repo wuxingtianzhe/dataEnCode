@@ -3,27 +3,32 @@
 int usage();
 int main()
 {
-	int sel = usage();
+	
  
-	switch (sel)
+	while (1)
 	{
-	case 1:
-		//密钥协商
-		break;
-	case 2:
-		//密钥校验
-		break;
-	case 3:
-		//密钥注销
-		break;
-	case 4:
-		//密钥查看
-		break;
-	case 5:	
-		//退出系统
-		break;
+		int sel = usage();
+		switch (sel)
+		{
+		case 1:
+			//密钥协商
+			break;
+		case 2:
+			//密钥校验
+			break;
+		case 3:
+			//密钥注销
+			break;
+		case 4:
+			//密钥查看
+			break;
+		case 5:
+			//退出系统
+			break;
+		}
 	}
-    printf("hello from client!\n",sel);
+	
+  //  printf("hello from client!\n",sel);
     return 0;
 }
 int usage()

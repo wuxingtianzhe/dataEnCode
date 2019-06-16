@@ -1,6 +1,7 @@
 E:\work\project1\dataEncProject\client\client\AesCrypto.cpp|/home/admin/projects/client/AesCrypto.cpp
 E:\work\project1\dataEncProject\client\client|/home/admin/projects/client
 @E:\work\project1\dataEncProject\client\client|@/home/admin/projects/client
+E:\work\project1\dataEncProject\client\client\ClientOP.cpp|/home/admin/projects/client/ClientOP.cpp
 E:\work\project1\dataEncProject\client\client\codec.cpp|/home/admin/projects/client/codec.cpp
 E:\work\project1\dataEncProject\client\client\codecFactory.cpp|/home/admin/projects/client/codecFactory.cpp
 E:\work\project1\dataEncProject\client\client\Cryptographic.cpp|/home/admin/projects/client/Cryptographic.cpp
@@ -14,6 +15,7 @@ E:\work\project1\dataEncProject\client\client\Response.cpp|/home/admin/projects/
 E:\work\project1\dataEncProject\client\client\TcpServer.cpp|/home/admin/projects/client/TcpServer.cpp
 E:\work\project1\dataEncProject\client\client\TcpSocket.cpp|/home/admin/projects/client/TcpSocket.cpp
 E:\work\project1\dataEncProject\client\client\AesCrypto.h|/home/admin/projects/client/AesCrypto.h
+E:\work\project1\dataEncProject\client\client\ClientOP.h|/home/admin/projects/client/ClientOP.h
 E:\work\project1\dataEncProject\client\client\codec.h|/home/admin/projects/client/codec.h
 E:\work\project1\dataEncProject\client\client\codecFactory.h|/home/admin/projects/client/codecFactory.h
 E:\work\project1\dataEncProject\client\client\Cryptographic.h|/home/admin/projects/client/Cryptographic.h
