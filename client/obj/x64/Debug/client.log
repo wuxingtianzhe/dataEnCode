@@ -1,4 +1,4 @@
-﻿生成启动时间为 2019/6/16 13:11:46。
+﻿生成启动时间为 2019/6/16 22:20:26。
      1>项目“E:\work\project1\dataEncProject\client\client\client.vcxproj”在节点 2 上(Build 个目标)。
      1>InitializeBuildStatus:
          正在对“E:\work\project1\dataEncProject\client\client\obj\x64\Debug\client.tlog\unsuccessfulbuild”执行 Touch 任务。
@@ -12,12 +12,12 @@
        _CopySources:
          Copying sources remotely to '106.14.126.211'
          Skipping 'E:\work\project1\dataEncProject\client\client\AesCrypto.cpp', as it is up to date.
-         Skipping 'E:\work\project1\dataEncProject\client\client\ClientOP.cpp', as it is up to date.
+         Copying file 'E:\work\project1\dataEncProject\client\client\ClientOP.cpp' to '/home/admin/projects/client/ClientOP.cpp'
          Skipping 'E:\work\project1\dataEncProject\client\client\codec.cpp', as it is up to date.
          Skipping 'E:\work\project1\dataEncProject\client\client\codecFactory.cpp', as it is up to date.
          Skipping 'E:\work\project1\dataEncProject\client\client\Cryptographic.cpp', as it is up to date.
          Skipping 'E:\work\project1\dataEncProject\client\client\Hash.cpp', as it is up to date.
-         Copying file 'E:\work\project1\dataEncProject\client\client\main.cpp' to '/home/admin/projects/client/main.cpp'
+         Skipping 'E:\work\project1\dataEncProject\client\client\main.cpp', as it is up to date.
          Skipping 'E:\work\project1\dataEncProject\client\client\msg.pb.cc', as it is up to date.
          Skipping 'E:\work\project1\dataEncProject\client\client\Request.cpp', as it is up to date.
          Skipping 'E:\work\project1\dataEncProject\client\client\RequestFactory.cpp', as it is up to date.
@@ -42,15 +42,15 @@
          Starting remote build
          Compiling sources:
          Skipping 'E:\work\project1\dataEncProject\client\client\AesCrypto.cpp', as it is up to date.
-         Skipping 'E:\work\project1\dataEncProject\client\client\ClientOP.cpp', as it is up to date.
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/ClientOP.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/ClientOP.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11
+         ClientOP.cpp
+         Done compiling '/home/admin/projects/client/ClientOP.cpp'
          Skipping 'E:\work\project1\dataEncProject\client\client\codec.cpp', as it is up to date.
          Skipping 'E:\work\project1\dataEncProject\client\client\codecFactory.cpp', as it is up to date.
          Skipping 'E:\work\project1\dataEncProject\client\client\Cryptographic.cpp', as it is up to date.
          Skipping 'E:\work\project1\dataEncProject\client\client\Hash.cpp', as it is up to date.
-         Invoking 'g++'
-         g++ -c -x c++ /home/admin/projects/client/main.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/main.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11
-         main.cpp
-         Done compiling '/home/admin/projects/client/main.cpp'
+         Skipping 'E:\work\project1\dataEncProject\client\client\main.cpp', as it is up to date.
          Skipping 'E:\work\project1\dataEncProject\client\client\msg.pb.cc', as it is up to date.
          Skipping 'E:\work\project1\dataEncProject\client\client\Request.cpp', as it is up to date.
          Skipping 'E:\work\project1\dataEncProject\client\client\RequestFactory.cpp', as it is up to date.
@@ -74,4 +74,4 @@
     0 个警告
     0 个错误
 
-已用时间 00:00:12.27
+已用时间 00:00:14.21

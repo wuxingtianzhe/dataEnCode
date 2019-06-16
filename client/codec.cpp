@@ -11,7 +11,7 @@ string codec::encodeMsg()
 
 void * codec::decodeMsg()
 {
-	return nullptr;
+	return NULL;
 }
 
 codec::~codec()

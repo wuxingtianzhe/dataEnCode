@@ -1,10 +1,10 @@
 E:\work\project1\dataEncProject\client\client\AesCrypto.cpp|636961443799794718|~/projects/client|
-E:\work\project1\dataEncProject\client\client\ClientOP.cpp|636962874399679965|~/projects/client|
-E:\work\project1\dataEncProject\client\client\codec.cpp|636956801030185826|~/projects/client|
+E:\work\project1\dataEncProject\client\client\ClientOP.cpp|636963204262822307|~/projects/client|
+E:\work\project1\dataEncProject\client\client\codec.cpp|636963202915765216|~/projects/client|
 E:\work\project1\dataEncProject\client\client\codecFactory.cpp|636957121944387370|~/projects/client|
 E:\work\project1\dataEncProject\client\client\Cryptographic.cpp|636960657055980433|~/projects/client|
 E:\work\project1\dataEncProject\client\client\Hash.cpp|636962345707643534|~/projects/client|
-E:\work\project1\dataEncProject\client\client\main.cpp|636962875065424054|~/projects/client|
+E:\work\project1\dataEncProject\client\client\main.cpp|636963202915874921|~/projects/client|
 E:\work\project1\dataEncProject\client\client\msg.pb.cc|636956816368707689|~/projects/client|
 E:\work\project1\dataEncProject\client\client\Request.cpp|636957115962271844|~/projects/client|
 E:\work\project1\dataEncProject\client\client\RequestFactory.cpp|636958606213281363|~/projects/client|
@@ -13,7 +13,7 @@ E:\work\project1\dataEncProject\client\client\Response.cpp|636957104128697150|~/
 E:\work\project1\dataEncProject\client\client\TcpServer.cpp|636957559220000000|~/projects/client|
 E:\work\project1\dataEncProject\client\client\TcpSocket.cpp|636957616530000000|~/projects/client|
 E:\work\project1\dataEncProject\client\client\AesCrypto.h|636961443799894447|~/projects/client|
-E:\work\project1\dataEncProject\client\client\ClientOP.h|636962874399799653|~/projects/client|
+E:\work\project1\dataEncProject\client\client\ClientOP.h|636962884981028397|~/projects/client|
 E:\work\project1\dataEncProject\client\client\codec.h|636956801055281843|~/projects/client|
 E:\work\project1\dataEncProject\client\client\codecFactory.h|636957121944586836|~/projects/client|
 E:\work\project1\dataEncProject\client\client\Cryptographic.h|636960657056269688|~/projects/client|
