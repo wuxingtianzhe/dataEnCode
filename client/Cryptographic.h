@@ -35,6 +35,10 @@ private:
 	bool initPublicKey(string pubfile);
 	//得到私钥
 	bool initPrivateKey(string prifile);
+	//base64编码
+	string toBase64(const char* str, int len);
+	//base64解码
+	char* fromBase64(string str);
 private:
 	RSA * m_publicKey;//公钥
 	RSA*  m_privateKey;//私钥

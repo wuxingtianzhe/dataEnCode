@@ -47,6 +47,9 @@
     <Filter Include="Source">
       <UniqueIdentifier>{3c1ddb4c-c9ff-47a9-99db-22767818f564}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SourceFile">
+      <UniqueIdentifier>{3bd331cf-e891-488b-ac26-495ab30b4259}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AesCrypto.h">
@@ -86,5 +89,10 @@
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="ClientOP.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="client.json">
+      <Filter>SourceFile</Filter>
+    </None>
   </ItemGroup>
 </Project>
