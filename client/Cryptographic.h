@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include<iostream>
 #include<openssl/rsa.h>
 #include<openssl/pem.h>
@@ -18,25 +18,28 @@ public:
 	Cryptographic();
 	Cryptographic(string filename, bool isPrivate = true);
 	~Cryptographic();
-	//Éú³ÉRSAÃÜÔ¿¶Ô
+	//ç”ŸæˆRSAå¯†é’¥å¯¹
 	void generateKeyFile(int bits, string pub = "public.pem", string pri = "private.pem");
 
-	//¹«Ô¿¼ÓÃÜ
+	//å…¬é’¥åŠ å¯†
 	string rsaPubKeyEncrypt(string data);
-	//Ë½Ô¿½âÃÜ
+	//ç§é’¥è§£å¯†
 	string rsaPriKeyDecrypt(string  encData);
-	//Ê¹ÓÃRSAÇ©Ãû
+	//ä½¿ç”¨RSAç­¾å
 	string rsaSign(string data, SignLevel level = Level3);
 
-	//Ê¹ÓÃRSAÑéÖ¤Ç©Ãû
+	//ä½¿ç”¨RSAéªŒè¯ç­¾å
 	bool rsaVerify(string data, string signData, SignLevel level = Level3);
 private:
-	//µÃµ½¹«Ô¿
+	string toBase64(const char* str, int len);
+	// base64è§£ç 
+	char* fromBase64(string str);
+	//å¾—åˆ°å…¬é’¥
 	bool initPublicKey(string pubfile);
-	//µÃµ½Ë½Ô¿
+	//å¾—åˆ°ç§é’¥
 	bool initPrivateKey(string prifile);
 private:
-	RSA * m_publicKey;//¹«Ô¿
-	RSA*  m_privateKey;//Ë½Ô¿
+	RSA * m_publicKey;//å…¬é’¥
+	RSA*  m_privateKey;//ç§é’¥
 };
 
