@@ -81,6 +81,9 @@ string Cryptographic::rsaPubKeyEncrypt(string data)
 {
 	cout << "加密数据长度: " << data.size() << endl;
 	// 计算公钥长度
+
+	cout << "1------------------" << endl;
+
 	int keyLen = RSA_size(m_publicKey);
 	cout << "pubKey len: " << keyLen << endl;
 	// 申请内存空间
@@ -130,6 +133,10 @@ string Cryptographic::rsaPriKeyDecrypt(string encData)
 	char* text = fromBase64(encData);
 	// 计算私钥长度
 	//cout << "解密数据长度: " << text.size() << endl;
+	//text指向的 内存需要释放
+	char*  text = fromBase64(encData);
+	cout << "1------------------" << endl;
+
 	int keyLen = RSA_size(m_privateKey);
 	// 使用私钥解密
 	char* decode = new char[keyLen + 1];
@@ -137,8 +144,12 @@ string Cryptographic::rsaPriKeyDecrypt(string encData)
 	int ret = RSA_private_decrypt(keyLen, (const unsigned char*)text,
 		(unsigned char*)decode, m_privateKey, RSA_PKCS1_PADDING);
 	string retStr = string();
+
+	cout << "2------------------" << endl;
+	cout << "ret"<<ret << endl;
 	if (ret >= 0)
 	{
+		cout << "解密成功" << endl;
 		retStr = string(decode, ret);
 	}
 	else
@@ -195,9 +206,20 @@ bool Cryptographic::rsaVerify(string data, string signData, SignLevel level)
 		(const unsigned char*)sign, keyLen, m_publicKey);
 	if (ret==-1)
 	{
+		ERR_print_errors_fp(stdout);
+	}
+	if (ret!=1)
+	{
 		return false;
 	}
 	return true;
+
+	//这个是之前用的，但是不知道这里是不是引起前面密钥解密后数据任然是二进制的
+	/*if (ret == -1)
+	{
+		return false;
+	}
+	return true;*/
 }
 string Cryptographic::toBase64(const char* str, int len)
 {
@@ -257,4 +279,34 @@ bool Cryptographic::initPrivateKey(string prifile)
 	BIO_free(priBio);
 	return true;
  
+}
+
+string Cryptographic::toBase64(const char * str, int len)
+{
+	BIO* mem = BIO_new(BIO_s_mem());
+	BIO* bs64 = BIO_new(BIO_f_base64());
+	//mem添加到bs64中
+	bs64 = BIO_push(bs64, mem);
+	//写数据
+	BIO_write(bs64, str, len);
+	BIO_flush(bs64);
+	//得到内存对象的指针
+	BUF_MEM* memPtr;
+	BIO_get_mem_ptr(bs64, &memPtr);
+	string retStr = string(memPtr->data, memPtr->length - 1);
+	BIO_free_all(bs64);
+	return retStr;
+}
+
+char * Cryptographic::fromBase64(string str)
+{
+	int length = str.size();
+	BIO* bs64 = BIO_new(BIO_f_base64());
+	BIO* mem = BIO_new_mem_buf(str.data(), length);
+	BIO_push(bs64, mem);
+	char* buffer = new char[length];
+	memset(buffer, 0, length);
+	BIO_read(bs64, buffer, length);
+	BIO_free_all(bs64);
+	return buffer;
 }

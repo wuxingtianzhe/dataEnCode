@@ -38,6 +38,10 @@ private:
 	bool initPublicKey(string pubfile);
 	//å¾—åˆ°ç§é’¥
 	bool initPrivateKey(string prifile);
+	//base64±àÂë
+	string toBase64(const char* str, int len);
+	//base64½âÂë
+	char* fromBase64(string str);
 private:
 	RSA * m_publicKey;//å…¬é’¥
 	RSA*  m_privateKey;//ç§é’¥
