@@ -1,0 +1,40 @@
+﻿  Validating sources
+  Copying sources remotely to '106.14.126.211'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  Cryptographic.cpp
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(46,18): warning : value computed is not used [-Wunused-value]
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(46,18): warning :   BIO_flush(pubIO);
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(46,18): warning :                   ^
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(54,18): warning : value computed is not used [-Wunused-value]
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(54,18): warning :   BIO_flush(priIO);
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(54,18): warning :                   ^
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(89,41): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(89,41): warning :   int ret = RSA_public_encrypt(data.size(), (const unsigned char*)data.data(),
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(89,41): warning :                                          ^
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(158,71): warning : conversion to ‘unsigned int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(158,71): warning :   int ret=RSA_sign(level, (const unsigned char*)data.data(), data.size()
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(158,71): warning :                                                                        ^
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(194,75): warning : conversion to ‘unsigned int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(194,75): warning :   int ret = RSA_verify(level, (const unsigned char*)data.data(), data.size(),
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(194,75): warning :                                                                            ^
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(210,17): warning : value computed is not used [-Wunused-value]
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(210,17): warning :   BIO_flush(bs64);
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(210,17): warning :                  ^
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(221,24): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(221,24): warning :   int length = str.size();
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(221,24): warning :                         ^
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(238,72): warning : suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(238,72): warning :   if (PEM_read_bio_RSAPublicKey(pubBio, &m_publicKey, NULL, NULL)==NULL);
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(238,72): warning :                                                                         ^
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(252,76): warning : suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(252,76): warning :   if (PEM_read_bio_RSAPrivateKey(priBio, &m_privateKey, NULL, NULL) == NULL);
+E:\Study\Itcast\work\project1\dataEncProject\server\server\Cryptographic.cpp(252,76): warning :                                                                             ^
+  serverOP.cpp
+E:\Study\Itcast\work\project1\dataEncProject\server\server\serverOP.cpp(30,35): warning : conversion to ‘short unsigned int’ from ‘Json::Value::Int {aka int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\server\server\serverOP.cpp(30,35): warning :   m_info.port = root["port"].asInt();
+E:\Study\Itcast\work\project1\dataEncProject\server\server\serverOP.cpp(30,35): warning :                                    ^
+E:\Study\Itcast\work\project1\dataEncProject\server\server\serverOP.cpp(179,17): warning : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  Linking objects
+  server.vcxproj -> E:\Study\Itcast\work\project1\dataEncProject\server\server\bin\x64\Debug\server.out
