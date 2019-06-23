@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="AesCrypto.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Cryptographic.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestFactory.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpSocket.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpServer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="codecFactory.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Request.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Response.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RespondFactory.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="msg.pb.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="codec.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientOP.cpp" />
+    <ClCompile Include="SecKeyShm.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseShm.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{008d4d5f-4735-4ea6-8161-6fce9de200f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{3c1ddb4c-c9ff-47a9-99db-22767818f564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile">
+      <UniqueIdentifier>{3bd331cf-e891-488b-ac26-495ab30b4259}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AesCrypto.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Cryptographic.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestFactory.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpSocket.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpServer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="codecFactory.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Request.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Response.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="RespondFactory.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="msg.pb.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="codec.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientOP.h" />
+    <ClInclude Include="SecKeyShm.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseShm.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="client.json">
+      <Filter>SourceFile</Filter>
+    </None>
+  </ItemGroup>
+</Project>

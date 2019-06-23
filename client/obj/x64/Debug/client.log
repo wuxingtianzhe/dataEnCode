@@ -1,0 +1,372 @@
+<<<<<<< HEAD
+﻿  Validating sources
+  Copying sources remotely to '106.14.126.211'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  AesCrypto.cpp
+E:\Study\Itcast\work\project1\dataEncProject\client\client\AesCrypto.cpp(9,40): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\AesCrypto.cpp(9,40): warning :   AES_set_encrypt_key(askey, key.size() * 8, &m_encKey);
+E:\Study\Itcast\work\project1\dataEncProject\client\client\AesCrypto.cpp(9,40): warning :                                         ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\AesCrypto.cpp(10,40): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\AesCrypto.cpp(10,40): warning :   AES_set_decrypt_key(askey, key.size() * 8, &m_decKey);
+E:\Study\Itcast\work\project1\dataEncProject\client\client\AesCrypto.cpp(10,40): warning :                                         ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\AesCrypto.cpp(35,35): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\AesCrypto.cpp(35,35): warning :    length = (data.size() % 16 + 1) * 16;
+E:\Study\Itcast\work\project1\dataEncProject\client\client\AesCrypto.cpp(35,35): warning :                                    ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\AesCrypto.cpp(39,23): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\AesCrypto.cpp(39,23): warning :    length = data.size()+1;
+E:\Study\Itcast\work\project1\dataEncProject\client\client\AesCrypto.cpp(39,23): warning :                        ^
+  ClientOP.cpp
+E:\Study\Itcast\work\project1\dataEncProject\client\client\ClientOP.cpp(96,52): warning : conversion to ‘short unsigned int’ from ‘int’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\ClientOP.cpp(96,52): warning :   socket->connectToHost(m_info.serverIP, m_info.port);
+E:\Study\Itcast\work\project1\dataEncProject\client\client\ClientOP.cpp(96,52): warning :                                                     ^
+  codec.cpp
+  codecFactory.cpp
+  Cryptographic.cpp
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(46,18): warning : value computed is not used [-Wunused-value]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(46,18): warning :   BIO_flush(pubIO);
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(46,18): warning :                   ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(54,18): warning : value computed is not used [-Wunused-value]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(54,18): warning :   BIO_flush(priIO);
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(54,18): warning :                   ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(89,41): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(89,41): warning :   int ret = RSA_public_encrypt(data.size(), (const unsigned char*)data.data(),
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(89,41): warning :                                          ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(158,71): warning : conversion to ‘unsigned int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(158,71): warning :   int ret=RSA_sign(level, (const unsigned char*)data.data(), data.size()
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(158,71): warning :                                                                        ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(194,75): warning : conversion to ‘unsigned int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(194,75): warning :   int ret = RSA_verify(level, (const unsigned char*)data.data(), data.size(),
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(194,75): warning :                                                                            ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(210,17): warning : value computed is not used [-Wunused-value]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(210,17): warning :   BIO_flush(bs64);
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(210,17): warning :                  ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(221,24): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(221,24): warning :   int length = str.size();
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(221,24): warning :                         ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(238,72): warning : suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(238,72): warning :   if (PEM_read_bio_RSAPublicKey(pubBio, &m_publicKey, NULL, NULL)==NULL);
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(238,72): warning :                                                                         ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(252,76): warning : suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(252,76): warning :   if (PEM_read_bio_RSAPrivateKey(priBio, &m_privateKey, NULL, NULL) == NULL);
+E:\Study\Itcast\work\project1\dataEncProject\client\client\Cryptographic.cpp(252,76): warning :                                                                             ^
+  Hash.cpp
+  main.cpp
+  msg.pb.cc
+  Request.cpp
+  RequestFactory.cpp
+  RespondFactory.cpp
+  Response.cpp
+  TcpServer.cpp
+  TcpSocket.cpp
+E:\Study\Itcast\work\project1\dataEncProject\client\client\TcpSocket.cpp(75,33): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\TcpSocket.cpp(75,33): warning :    int dataLen = sendData.size() + 4;
+E:\Study\Itcast\work\project1\dataEncProject\client\client\TcpSocket.cpp(75,33): warning :                                  ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\TcpSocket.cpp(85,36): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\TcpSocket.cpp(85,36): warning :    int netlen = htonl(sendData.size());
+E:\Study\Itcast\work\project1\dataEncProject\client\client\TcpSocket.cpp(85,36): warning :                                     ^
+E:\Study\Itcast\work\project1\dataEncProject\client\client\TcpSocket.cpp(407,17): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\Study\Itcast\work\project1\dataEncProject\client\client\TcpSocket.cpp(407,17): warning :     return count - nleft;
+E:\Study\Itcast\work\project1\dataEncProject\client\client\TcpSocket.cpp(407,17): warning :                  ^
+  Linking objects
+  client.vcxproj -> E:\Study\Itcast\work\project1\dataEncProject\client\client\bin\x64\Debug\client.out
+=======
+﻿生成启动时间为 2019/6/18 23:57:32。
+     1>项目“E:\work\project1\dataEncProject\client\client\client.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“E:\work\project1\dataEncProject\client\client\obj\x64\Debug\client.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CreateRecipeFile:
+       正在跳过目标“CreateRecipeFile”，因为所有输出文件相对于输入文件而言都是最新的。
+       _ValidateValidArchitecture:
+         Validating architecture
+         Current project architecture 'x64' is compatible with the remote system architecture 'x64' ('x64').
+       _ValidateSources:
+         Validating sources
+       _CopySources:
+         Copying sources remotely to '106.14.126.211'
+         Skipping 'E:\work\project1\dataEncProject\client\client\AesCrypto.cpp', as it is up to date.
+         Copying file 'E:\work\project1\dataEncProject\client\client\ClientOP.cpp' to '/home/admin/projects/client/ClientOP.cpp'
+         Skipping 'E:\work\project1\dataEncProject\client\client\codec.cpp', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\codecFactory.cpp', as it is up to date.
+         Copying file 'E:\work\project1\dataEncProject\client\client\Cryptographic.cpp' to '/home/admin/projects/client/Cryptographic.cpp'
+         Skipping 'E:\work\project1\dataEncProject\client\client\Hash.cpp', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\main.cpp', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\msg.pb.cc', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\Request.cpp', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\RequestFactory.cpp', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\RespondFactory.cpp', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\Response.cpp', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\TcpServer.cpp', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\TcpSocket.cpp', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\AesCrypto.h', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\ClientOP.h', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\codec.h', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\codecFactory.h', as it is up to date.
+         Copying file 'E:\work\project1\dataEncProject\client\client\Cryptographic.h' to '/home/admin/projects/client/Cryptographic.h'
+         Skipping 'E:\work\project1\dataEncProject\client\client\Hash.h', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\msg.pb.h', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\Request.h', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\RequestFactory.h', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\RespondFactory.h', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\Response.h', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\TcpServer.h', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\TcpSocket.h', as it is up to date.
+         Skipping 'E:\work\project1\dataEncProject\client\client\client.json', as it is up to date.
+       ClCompile:
+         Starting remote build
+         Compiling sources:
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/AesCrypto.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/AesCrypto.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         AesCrypto.cpp
+         /home/admin/projects/client/AesCrypto.cpp: In constructor ‘AesCrypto::AesCrypto(std::string)’:
+         /home/admin/projects/client/AesCrypto.cpp:9:40: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           AES_set_encrypt_key(askey, key.size() * 8, &m_encKey);
+                                                 ^
+         /home/admin/projects/client/AesCrypto.cpp:10:40: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           AES_set_decrypt_key(askey, key.size() * 8, &m_decKey);
+                                                 ^
+         /home/admin/projects/client/AesCrypto.cpp: In member function ‘std::string AesCrypto::aesCrypto(std::string, int)’:
+         /home/admin/projects/client/AesCrypto.cpp:35:35: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+            length = (data.size() % 16 + 1) * 16;
+                                            ^
+         /home/admin/projects/client/AesCrypto.cpp:39:23: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+            length = data.size()+1;
+                                ^
+         /home/admin/projects/client/AesCrypto.cpp: In constructor ‘AesCrypto::AesCrypto(std::string)’:
+         /home/admin/projects/client/AesCrypto.cpp:9:40: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           AES_set_encrypt_key(askey, key.size() * 8, &m_encKey);
+                                                 ^
+         /home/admin/projects/client/AesCrypto.cpp:10:40: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           AES_set_decrypt_key(askey, key.size() * 8, &m_decKey);
+                                                 ^
+         /home/admin/projects/client/AesCrypto.cpp: In member function ‘std::string AesCrypto::aesCrypto(std::string, int)’:
+         /home/admin/projects/client/AesCrypto.cpp:35:35: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+            length = (data.size() % 16 + 1) * 16;
+                                            ^
+         /home/admin/projects/client/AesCrypto.cpp:39:23: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+            length = data.size()+1;
+                                ^
+         
+     1>E:\work\project1\dataEncProject\client\client\AesCrypto.cpp(9,40): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+     1>E:\work\project1\dataEncProject\client\client\AesCrypto.cpp(10,40): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+     1>E:\work\project1\dataEncProject\client\client\AesCrypto.cpp(35,35): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+     1>E:\work\project1\dataEncProject\client\client\AesCrypto.cpp(39,23): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         Done compiling '/home/admin/projects/client/AesCrypto.cpp'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/ClientOP.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/ClientOP.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         ClientOP.cpp
+         /home/admin/projects/client/ClientOP.cpp: In member function ‘bool ClientOP::seckeyAgree()’:
+         /home/admin/projects/client/ClientOP.cpp:103:52: warning: conversion to ‘short unsigned int’ from ‘int’ may alter its value [-Wconversion]
+           socket->connectToHost(m_info.serverIP, m_info.port);
+                                                             ^
+         /home/admin/projects/client/ClientOP.cpp: In member function ‘bool ClientOP::seckeyAgree()’:
+         /home/admin/projects/client/ClientOP.cpp:103:52: warning: conversion to ‘short unsigned int’ from ‘int’ may alter its value [-Wconversion]
+           socket->connectToHost(m_info.serverIP, m_info.port);
+                                                             ^
+         
+     1>E:\work\project1\dataEncProject\client\client\ClientOP.cpp(103,52): warning : conversion to ‘short unsigned int’ from ‘int’ may alter its value [-Wconversion]
+         Done compiling '/home/admin/projects/client/ClientOP.cpp'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/codec.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/codec.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         codec.cpp
+         Done compiling '/home/admin/projects/client/codec.cpp'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/codecFactory.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/codecFactory.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         codecFactory.cpp
+         Done compiling '/home/admin/projects/client/codecFactory.cpp'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/Cryptographic.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/Cryptographic.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         Cryptographic.cpp
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘void Cryptographic::generateKeyFile(int, std::string, std::string)’:
+         /home/admin/projects/client/Cryptographic.cpp:46:18: warning: value computed is not used [-Wunused-value]
+           BIO_flush(pubIO);
+                           ^
+         /home/admin/projects/client/Cryptographic.cpp:54:18: warning: value computed is not used [-Wunused-value]
+           BIO_flush(priIO);
+                           ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘std::string Cryptographic::rsaPubKeyEncrypt(std::string)’:
+         /home/admin/projects/client/Cryptographic.cpp:72:39: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           int ret=RSA_public_encrypt(data.size(), (const unsigned char*)data.data()
+                                                ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘std::string Cryptographic::rsaPriKeyDecrypt(std::string)’:
+         /home/admin/projects/client/Cryptographic.cpp:102:45: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           int ret = RSA_private_encrypt(encData.size(), (const unsigned char*)text
+                                                      ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘std::string Cryptographic::rsaSign(std::string, SignLevel)’:
+         /home/admin/projects/client/Cryptographic.cpp:133:71: warning: conversion to ‘unsigned int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           int ret=RSA_sign(level, (const unsigned char*)data.data(), data.size()
+                                                                                ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘bool Cryptographic::rsaVerify(std::string, std::string, SignLevel)’:
+         /home/admin/projects/client/Cryptographic.cpp:151:75: warning: conversion to ‘unsigned int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           int ret = RSA_verify(level, (const unsigned char*)data.data(), data.size(),
+                                                                                    ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘bool Cryptographic::initPublicKey(std::string)’:
+         /home/admin/projects/client/Cryptographic.cpp:177:72: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+           if (PEM_read_bio_RSAPublicKey(pubBio, &m_publicKey, NULL, NULL)==NULL);
+                                                                                 ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘bool Cryptographic::initPrivateKey(std::string)’:
+         /home/admin/projects/client/Cryptographic.cpp:191:76: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+           if (PEM_read_bio_RSAPrivateKey(priBio, &m_privateKey, NULL, NULL) == NULL);
+                                                                                     ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘std::string Cryptographic::toBase64(const char*, int)’:
+         /home/admin/projects/client/Cryptographic.cpp:209:17: warning: value computed is not used [-Wunused-value]
+           BIO_flush(bs64);
+                          ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘char* Cryptographic::fromBase64(std::string)’:
+         /home/admin/projects/client/Cryptographic.cpp:220:24: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           int length = str.size();
+                                 ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘void Cryptographic::generateKeyFile(int, std::string, std::string)’:
+         /home/admin/projects/client/Cryptographic.cpp:46:18: warning: value computed is not used [-Wunused-value]
+           BIO_flush(pubIO);
+                           ^
+         /home/admin/projects/client/Cryptographic.cpp:54:18: warning: value computed is not used [-Wunused-value]
+           BIO_flush(priIO);
+                           ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘std::string Cryptographic::rsaPubKeyEncrypt(std::string)’:
+         /home/admin/projects/client/Cryptographic.cpp:72:39: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           int ret=RSA_public_encrypt(data.size(), (const unsigned char*)data.data()
+                                                ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘std::string Cryptographic::rsaPriKeyDecrypt(std::string)’:
+         /home/admin/projects/client/Cryptographic.cpp:102:45: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           int ret = RSA_private_encrypt(encData.size(), (const unsigned char*)text
+                                                      ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘std::string Cryptographic::rsaSign(std::string, SignLevel)’:
+         /home/admin/projects/client/Cryptographic.cpp:133:71: warning: conversion to ‘unsigned int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           int ret=RSA_sign(level, (const unsigned char*)data.data(), data.size()
+                                                                                ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘bool Cryptographic::rsaVerify(std::string, std::string, SignLevel)’:
+         /home/admin/projects/client/Cryptographic.cpp:151:75: warning: conversion to ‘unsigned int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           int ret = RSA_verify(level, (const unsigned char*)data.data(), data.size(),
+                                                                                    ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘bool Cryptographic::initPublicKey(std::string)’:
+         /home/admin/projects/client/Cryptographic.cpp:177:72: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+           if (PEM_read_bio_RSAPublicKey(pubBio, &m_publicKey, NULL, NULL)==NULL);
+                                                                                 ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘bool Cryptographic::initPrivateKey(std::string)’:
+         /home/admin/projects/client/Cryptographic.cpp:191:76: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+           if (PEM_read_bio_RSAPrivateKey(priBio, &m_privateKey, NULL, NULL) == NULL);
+                                                                                     ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘std::string Cryptographic::toBase64(const char*, int)’:
+         /home/admin/projects/client/Cryptographic.cpp:209:17: warning: value computed is not used [-Wunused-value]
+           BIO_flush(bs64);
+                          ^
+         /home/admin/projects/client/Cryptographic.cpp: In member function ‘char* Cryptographic::fromBase64(std::string)’:
+         /home/admin/projects/client/Cryptographic.cpp:220:24: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+           int length = str.size();
+                                 ^
+         
+     1>E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(46,18): warning : value computed is not used [-Wunused-value]
+     1>E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(54,18): warning : value computed is not used [-Wunused-value]
+     1>E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(72,39): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+     1>E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(102,45): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+     1>E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(133,71): warning : conversion to ‘unsigned int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+     1>E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(151,75): warning : conversion to ‘unsigned int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+     1>E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(177,72): warning : suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+     1>E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(191,76): warning : suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+     1>E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(209,17): warning : value computed is not used [-Wunused-value]
+     1>E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(220,24): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         Done compiling '/home/admin/projects/client/Cryptographic.cpp'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/Hash.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/Hash.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         Hash.cpp
+         Done compiling '/home/admin/projects/client/Hash.cpp'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/main.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/main.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         main.cpp
+         Done compiling '/home/admin/projects/client/main.cpp'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/msg.pb.cc -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/msg.pb.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         msg.pb.cc
+         Done compiling '/home/admin/projects/client/msg.pb.cc'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/Request.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/Request.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         Request.cpp
+         Done compiling '/home/admin/projects/client/Request.cpp'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/RequestFactory.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/RequestFactory.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         RequestFactory.cpp
+         Done compiling '/home/admin/projects/client/RequestFactory.cpp'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/RespondFactory.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/RespondFactory.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         RespondFactory.cpp
+         Done compiling '/home/admin/projects/client/RespondFactory.cpp'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/Response.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/Response.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         Response.cpp
+         Done compiling '/home/admin/projects/client/Response.cpp'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/TcpServer.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/TcpServer.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         TcpServer.cpp
+         Done compiling '/home/admin/projects/client/TcpServer.cpp'
+         Invoking 'g++'
+         g++ -c -x c++ /home/admin/projects/client/TcpSocket.cpp -g2 -gdwarf-2 -o "/home/admin/projects/client/obj/x64/Debug/TcpSocket.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11 -DEBUG 
+         TcpSocket.cpp
+         /home/admin/projects/client/TcpSocket.cpp: In member function ‘int TcpSocket::sendMsg(std::string, int)’:
+         /home/admin/projects/client/TcpSocket.cpp:75:33: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+            int dataLen = sendData.size() + 4;
+                                          ^
+         /home/admin/projects/client/TcpSocket.cpp:85:36: warning: conversion to ‘uint32_t {aka unsigned int}’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+            int netlen = htonl(sendData.size());
+                                             ^
+         /home/admin/projects/client/TcpSocket.cpp: In member function ‘int TcpSocket::sendMsg(std::string, int)’:
+         /home/admin/projects/client/TcpSocket.cpp:75:33: warning: conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+            int dataLen = sendData.size() + 4;
+                                          ^
+         /home/admin/projects/client/TcpSocket.cpp:85:36: warning: conversion to ‘uint32_t {aka unsigned int}’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+            int netlen = htonl(sendData.size());
+                                             ^
+         /home/admin/projects/client/TcpSocket.cpp: In member function ‘int TcpSocket::readn(void*, int)’:
+         /home/admin/projects/client/TcpSocket.cpp:407:17: warning: conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+             return count - nleft;
+                          ^
+         /home/admin/projects/client/TcpSocket.cpp: In member function ‘int TcpSocket::readn(void*, int)’:
+         /home/admin/projects/client/TcpSocket.cpp:407:17: warning: conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+             return count - nleft;
+                          ^
+         
+     1>E:\work\project1\dataEncProject\client\client\TcpSocket.cpp(75,33): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+     1>E:\work\project1\dataEncProject\client\client\TcpSocket.cpp(85,36): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+     1>E:\work\project1\dataEncProject\client\client\TcpSocket.cpp(407,17): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+         Done compiling '/home/admin/projects/client/TcpSocket.cpp'
+       Link:
+         Linking objects
+         Invoking 'ld'
+         g++ -o "/home/admin/projects/client/bin/x64/Debug/client.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/admin/projects/client/obj/x64/Debug/AesCrypto.o /home/admin/projects/client/obj/x64/Debug/ClientOP.o /home/admin/projects/client/obj/x64/Debug/codec.o /home/admin/projects/client/obj/x64/Debug/codecFactory.o /home/admin/projects/client/obj/x64/Debug/Cryptographic.o /home/admin/projects/client/obj/x64/Debug/Hash.o /home/admin/projects/client/obj/x64/Debug/main.o /home/admin/projects/client/obj/x64/Debug/msg.pb.o /home/admin/projects/client/obj/x64/Debug/Request.o /home/admin/projects/client/obj/x64/Debug/RequestFactory.o /home/admin/projects/client/obj/x64/Debug/RespondFactory.o /home/admin/projects/client/obj/x64/Debug/Response.o /home/admin/projects/client/obj/x64/Debug/TcpServer.o /home/admin/projects/client/obj/x64/Debug/TcpSocket.o -lpthread -lprotobuf -ljson -lcrypto -lssl
+         Done linking, output file name: '/home/admin/projects/client/bin/x64/Debug/client.out'
+         Copying file '/home/admin/projects/client/bin/x64/Debug/client.out' to 'E:\work\project1\dataEncProject\client\client\bin\x64\Debug\client.out'
+         client.vcxproj -> E:\work\project1\dataEncProject\client\client\bin\x64\Debug\client.out
+       FinalizeBuildStatus:
+         正在删除文件“E:\work\project1\dataEncProject\client\client\obj\x64\Debug\client.tlog\unsuccessfulbuild”。
+         正在对“E:\work\project1\dataEncProject\client\client\obj\x64\Debug\client.tlog\client.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\work\project1\dataEncProject\client\client\client.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+       “E:\work\project1\dataEncProject\client\client\client.vcxproj”(Build 目标) (1) ->
+       (ClCompile 目标) -> 
+         E:\work\project1\dataEncProject\client\client\AesCrypto.cpp(9,40): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         E:\work\project1\dataEncProject\client\client\AesCrypto.cpp(10,40): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         E:\work\project1\dataEncProject\client\client\AesCrypto.cpp(35,35): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         E:\work\project1\dataEncProject\client\client\AesCrypto.cpp(39,23): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         E:\work\project1\dataEncProject\client\client\ClientOP.cpp(103,52): warning : conversion to ‘short unsigned int’ from ‘int’ may alter its value [-Wconversion]
+         E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(46,18): warning : value computed is not used [-Wunused-value]
+         E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(54,18): warning : value computed is not used [-Wunused-value]
+         E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(72,39): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(102,45): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(133,71): warning : conversion to ‘unsigned int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(151,75): warning : conversion to ‘unsigned int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(177,72): warning : suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+         E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(191,76): warning : suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+         E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(209,17): warning : value computed is not used [-Wunused-value]
+         E:\work\project1\dataEncProject\client\client\Cryptographic.cpp(220,24): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         E:\work\project1\dataEncProject\client\client\TcpSocket.cpp(75,33): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         E:\work\project1\dataEncProject\client\client\TcpSocket.cpp(85,36): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+         E:\work\project1\dataEncProject\client\client\TcpSocket.cpp(407,17): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+
+    18 个警告
+    0 个错误
+
+已用时间 00:00:58.76
+>>>>>>> 3c7701080cf928ca18692b403c96f4ff04835d27
