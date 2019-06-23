@@ -39,6 +39,12 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="ClientOP.cpp" />
+    <ClCompile Include="SecKeyShm.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseShm.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header">
@@ -89,6 +95,12 @@
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="ClientOP.h" />
+    <ClInclude Include="SecKeyShm.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseShm.h">
+      <Filter>Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="client.json">

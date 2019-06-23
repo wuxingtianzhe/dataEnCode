@@ -1,5 +1,6 @@
-#pragma once
+ï»¿#pragma once
 #include<string>	
+#include"SecKeyShm.h"
 using namespace std;
 
 struct ClientInfo
@@ -14,17 +15,18 @@ struct ClientInfo
 class ClientOP
 {
 public:
-	//³õÊ¼»¯Êı¾İ£¬´Ó´ÅÅÌµÄÅäÖÃÎÄ¼şÖĞ
+	//åˆå§‹åŒ–æ•°æ®ï¼Œä»ç£ç›˜çš„é…ç½®æ–‡ä»¶ä¸­
 	ClientOP(string filename);
 	~ClientOP();
-	//1.ÃÜÔ¿Ğ­ÉÌ
+	//1.å¯†é’¥åå•†
 	bool seckeyAgree();
-	//2.ÃÜÔ¿Ğ£Ñé
+	//2.å¯†é’¥æ ¡éªŒ
 	void seckeyCheck();
-	//3.ÃÜÔ¿×¢Ïú
+	//3.å¯†é’¥æ³¨é”€
 	void seckeyWithdraw();
 
 private:
 	ClientInfo m_info;
+	SecKeyShm* m_shm;
 };
 

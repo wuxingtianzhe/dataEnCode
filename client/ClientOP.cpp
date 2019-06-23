@@ -13,11 +13,9 @@
 #include<json/value.h>
 #include<string>
 #include"Hash.h"
+#include"SecKeyShm.h"
 using namespace Json;
 #define DEBUG
-
-
-
 ClientOP::ClientOP(string filename)
 {
 
@@ -37,12 +35,19 @@ ClientOP::ClientOP(string filename)
 	m_info.port = root["serverPort"].asInt();
 	m_info.maxNode = root["maxNode"].asInt();
 	m_info.shmKey = root["shmKey"].asString();
+	m_shm = new SecKeyShm(m_info.shmKey, m_info.maxNode);
+	m_shm->shmInit();
+#ifdef DEBUG
 	cout << m_info.clientID << endl;
 	cout << m_info.port << endl;
+
+#endif // DEBUG
+
 }
 
 ClientOP::~ClientOP()
 {
+	delete m_shm;
 }
 /*
 准备: 对称加密的秘钥, 通过非对称性加密的方式完成秘钥交换
@@ -120,7 +125,13 @@ bool ClientOP::seckeyAgree()
 	//crypto.rsaPriKeyDecrypt(resMsg->data());
 	cout << "对称加密的密钥：" << aeskey << endl;
 	//6.将aeskey存储到共享内存中
-
+	NodeSHMInfo shmNode;
+	strcpy(shmNode.clientID, m_info.serverID.data());
+	strcpy(shmNode.serverID, m_info.serverID.data());
+	strcpy(shmNode.seckey, aeskey.data());
+	shmNode.status = 0;
+	shmNode.seckeyID = resMsg->seckeyid();
+	m_shm->shmWrite(&shmNode);
 	}
 	//7.是否释放资源
 	delete factory;
